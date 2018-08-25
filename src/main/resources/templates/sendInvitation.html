@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmins:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<p th:text="${invitation.username}">
+			Dear
+		</p>
+		
+		<p th:text="${fromWhichUser}">
+			You have been invited by 
+		
+		</p>
+		
+		<p>
+			Click on this link to activate your profile: 
+		</p>
+		localhost:8090/api/team/activate?key=
+		<p th:text="${invitation.activationLink}">
+		</p>
+	</body>
+</html>
